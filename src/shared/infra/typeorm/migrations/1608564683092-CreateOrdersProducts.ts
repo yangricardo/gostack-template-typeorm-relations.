@@ -15,10 +15,6 @@ export default class CreateOrdersProducts1608564683092
             default: 'uuid_generate_v4()',
           },
           {
-            name: 'name',
-            type: 'varchar',
-          },
-          {
             name: 'price',
             type: 'decimal',
             precision: 10,
