@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:12
+    hostname: postgres.gostack_desafio9
+    container_name: postgres.gostack_desafio9
+    environment:
+      POSTGRES_DB: gostack_desafio09
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: docker
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./postgresql/data:/var/lib/postgresql/data
