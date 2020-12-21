@@ -17,7 +17,7 @@ export default class AddProductIdToOrdersProducts1608565728478
       }),
     );
     await queryRunner.createForeignKey(
-      'orders',
+      'orders_products',
       new TableForeignKey({
         name: 'OrdersProductsProduct',
         columnNames: ['product_id'],
